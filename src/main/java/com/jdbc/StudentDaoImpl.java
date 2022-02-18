@@ -29,7 +29,7 @@ public class StudentDaoImpl implements StudentDao {
 		map.put("id",student.getId());  
 		map.put("name",student.getName());  
 		map.put("marks",student.getMarks()); 
-		
+		             
 		jt.execute(query,map,new PreparedStatementCallback() {  
 		    public Object doInPreparedStatement(PreparedStatement ps)  
 		            throws SQLException, DataAccessException {  
